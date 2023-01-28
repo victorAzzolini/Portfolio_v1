@@ -3,7 +3,6 @@
     background-color: var(--background-main);
     left: 0;
     top: 0;
-    z-index: var(--z-fixed);
     color: white;
     padding: 2em 3em;
 }
@@ -68,6 +67,7 @@
         bottom: 0;
         position: fixed;
         padding: 2rem 1rem;
+        z-index: var(--z-fixed);
     }
 
     .nav {
@@ -113,17 +113,24 @@
         cursor: pointer;
     }
 
+    .nav__close:hover{
+        color: var(--title-color-dark);
+    }
+
+    .nav__close:hover{
+        color: var(--title-color-hover);
+    }
+
+}
+
     @media screen and (max-width: 576px) {
         .nav__list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            gap: 2rem;
             margin-bottom: 5em;
         }
 
-        .nav__menu {
-            transition: 2s;
-        }
     }
 
 
@@ -132,4 +139,4 @@
     
 
 
-}
+
