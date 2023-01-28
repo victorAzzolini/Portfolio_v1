@@ -1,0 +1,135 @@
+.header {
+    width: 100%;
+    background-color: var(--background-main);
+    left: 0;
+    top: 0;
+    z-index: var(--z-fixed);
+    color: white;
+    padding: 2em 3em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.uil-brackets-curly {
+    color: var(--title-color-hover);
+    font-size: var(--h2-font-size);
+    padding: 0 .1em;
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo__name {
+    transition: 1000ms;
+    font-size: 1.3rem;
+}
+
+.logo__name:hover {
+    color: var(--title-color-hover);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    transition: 1000ms;
+}
+
+.nav__link:hover {
+    color: var(--title-color-hover);
+}
+
+.nav__close,
+.nav__toogle,
+.nav__logo {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /*============ BREAKPOINTS ================*/
+    /* For medium devices */
+    .header {
+        top: initial;
+        bottom: 0;
+        position: fixed;
+        padding: 2rem 1rem;
+    }
+
+    .nav {
+        margin-left: 0;
+        padding-left: 0;
+        height: 3rem;
+         
+    }
+
+    .nav__toogle,
+    .nav__close,
+    .nav__logo {
+        display: block;
+    }
+
+    .nav__menu {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-main);
+        padding: 2rem 1.5rem 6rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .2s;
+    }
+
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 5em;
+    }
+
+    .nav__item {
+        font-size: var(--h2-font-size);
+    }
+
+    .nav__close {
+        position: absolute;
+        font-size: var(--h2-font-size);
+        left: 92%;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 576px) {
+        .nav__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 5em;
+        }
+
+        .nav__menu {
+            transition: 2s;
+        }
+    }
+
+
+    /* ======== Show Menu ======== */
+
+    
+
+
+}
