@@ -1,0 +1,97 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.home__description {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.home__name {
+    color: rgb(241, 70, 70);
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.home__subtitle {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.home__about {
+    color: white;
+}
+
+.home__img {
+    background-image: url(../../assets/victor_bw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    justify-self: center;
+    width: 300px;
+    height: 300px;   
+}
+
+.home__button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.5em;
+    max-width: 400px;
+    
+}
+
+.button {
+    font-weight: 300;
+    width: 160px;
+    transition: .4s;
+}
+
+.button:hover {
+    border:  1px solid #fff;
+    background-color: rgb(199, 50, 50);
+    width: 170px;  
+}
+
+.home button i {
+    font-size: 1.3em;
+}
+    
+
+/*============ BREAKPOINTS ================*/
+  
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .button {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .button:hover {
+        border:  1px solid #fff;
+        background-color: rgb(199, 50, 50);
+        width: 110px;  
+    }
+    
+
+}
+  
+  @media screen and (max-width: 576px) {
+    
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    
+  }
+  

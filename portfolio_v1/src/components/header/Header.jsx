@@ -1,6 +1,10 @@
+import { useState } from 'react';
+
 import './header.css'
 
 function Header() {
+    const [toogle, setToogle] = useState(false)
+
     return (
         <header className="header">
             <nav className="nav container">
@@ -8,7 +12,7 @@ function Header() {
                     <i class="uil uil-brackets-curly"></i>
                     <div className="logo__name">Azzolini.dev</div>
                 </a>
-                <div className="nav__menu">
+                <div className={toogle ? "nav__menu": "show__menu"}>
                     <ul className="nav__list">
                         <li className="nav__item">
                             <a href="#home" className="nav__link">
@@ -35,11 +39,11 @@ function Header() {
                             </a>
                         </li>
 
-                        <i className="uil uil-times nav__close"></i>
+                        <i className="uil uil-times nav__close" onClick={() => setToogle(!toogle)}></i>
                     </ul>                
                 </div>
 
-                <div className="nav__toogle">
+                <div className="nav__toogle" onClick={() => setToogle(!toogle)}>
                     <i className="uil uil-apps"></i>
                 </div>
             

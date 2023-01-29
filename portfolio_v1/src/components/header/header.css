@@ -12,12 +12,12 @@
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    height: 2.5rem;
+    height: 2rem;
 }
 
 .uil-brackets-curly {
     color: var(--title-color-hover);
-    font-size: var(--h2-font-size);
+    font-size: 1.7rem;
     padding: 0 .1em;
 }
 
@@ -28,7 +28,7 @@
 
 .logo__name {
     transition: 1000ms;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .logo__name:hover {
@@ -47,6 +47,7 @@
     align-items: center;
     padding: 0.5em;
     transition: 1000ms;
+    font-size: 1.3rem;
 }
 
 .nav__link:hover {
@@ -62,79 +63,113 @@
 @media screen and (max-width: 768px) {
     /*============ BREAKPOINTS ================*/
     /* For medium devices */
-    .header {
+   .header {
         top: initial;
         bottom: 0;
         position: fixed;
-        padding: 2rem 1rem;
-        z-index: var(--z-fixed);
-    }
-
-    .nav {
-        margin-left: 0;
         padding-left: 0;
-        height: 3rem;
-         
-    }
+        padding-right: 0;
+   }
 
-    .nav__toogle,
-    .nav__close,
-    .nav__logo {
-        display: block;
-    }
+   .nav__menu {
+        width: 100%;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        padding: 1.5em 1.5em 8em ;
+        background-color: var(--background-main);
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.308);
+        border-radius: 2rem 2rem 0px 0px;
+        z-index: var(--z-fixed);
+        transition: .4s;
+   }
 
-    .nav__menu {
+   /* ======= Show Menu ============ */
+
+   .show__menu {
+        width: 100%;
         position: fixed;
         left: 0;
-        width: 100%;
+        padding: 1.5em 1.5em 8em ;
         background-color: var(--background-main);
-        padding: 2rem 1.5rem 6rem;
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 1.5rem 1.5rem 0 0;
-        transition: .2s;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.308);
+        border-radius: 2rem 2rem 0px 0px;
+        z-index: var(--z-fixed);
+        transition: .4s;
+    }
+    
+    /* ======= Show Menu ============ */
+
+   .nav__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+   }
+
+   .nav__item {
+        font-size: var(--h2-font-size);
+   }
+
+   .nav__toogle,
+   .nav__logo,
+   .nav__close {
+        display: block;
+   }
+
+   .nav__toogle {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 1000ms;
+   }
+
+   .nav__toogle:hover {
+        color: var(--title-color-hover);
+   }
+
+   .nav__close {
+        padding: 1rem;
+        font-size: 1.7rem;
+        position: absolute;
+        left: 90%;
+        top: 45%;
+        cursor: pointer;
+        transition: 1000ms;
+   }
+
+   .nav__close:hover {
+        color: var(--title-color-hover);
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .nav__menu {
+        padding: 1.5em 3.2em 12em ;
     }
 
     .nav__list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        margin-bottom: 5em;
-    }
+        grid-template-columns: repeat(2, 1fr);
+   }
 
-    .nav__item {
-        font-size: var(--h2-font-size);
-    }
-
-    .nav__close {
-        position: absolute;
-        font-size: var(--h2-font-size);
-        left: 92%;
-        top: 50%;
-        cursor: pointer;
-    }
-
-    .nav__close:hover{
-        color: var(--title-color-dark);
-    }
-
-    .nav__close:hover{
-        color: var(--title-color-hover);
-    }
-
+   .nav__close {
+    left: 88%;
+}
 }
 
-    @media screen and (max-width: 576px) {
-        .nav__list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-bottom: 5em;
-        }
-
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 1em 2em 12em ;
     }
 
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+   }
 
-    /* ======== Show Menu ======== */
+   
+}
+
+
+
 
     
 

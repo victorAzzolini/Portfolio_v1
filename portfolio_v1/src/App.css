@@ -77,7 +77,7 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: var(--background-main);
   color: var(--text-color);
 }
 
@@ -142,10 +142,10 @@ img {
 /*============ BUTTONS ================*/
 .button {
   display: inline-block;
-  background: linear-gradient(to right, #9c27b0, #e91e63);
+  background: rgb(241, 70, 70);
   color: var(--title-color);
-  padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
   font-weight: var(--font-medium);
 }
 
