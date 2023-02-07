@@ -1,0 +1,46 @@
+.home__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    row-gap: 0.7rem;
+}
+
+.social__link {
+    font-size: 1.4rem;
+    transition: .3s;
+}
+
+.social__link:hover {
+    color: var(--title-color-hover);
+    font-size: 1.5rem;
+}
+
+/*============ BREAKPOINTS ================*/
+
+@media screen and (max-width: 992px) {
+    .home__social {
+        padding-right: 2rem;
+    }
+}
+  
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .home__social {
+        padding-top: 3.5rem;
+        padding-left: 2rem;
+    }
+
+}
+  
+  @media screen and (max-width: 576px) {
+    
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    
+  }
+  

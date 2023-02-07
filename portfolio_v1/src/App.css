@@ -79,6 +79,7 @@ textarea {
 body {
   background-color: var(--background-main);
   color: var(--text-color);
+  padding-bottom: 200px;
 }
 
 h1, h2, h3 {
