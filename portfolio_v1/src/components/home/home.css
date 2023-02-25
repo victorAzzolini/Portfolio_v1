@@ -66,7 +66,7 @@
 .button:hover {
     border:  1px solid #fff;
     background-color: rgb(199, 50, 50);
-    width: 170px;  
+    transform: scale(1.1, 1.1);  
 }
 
 .home button i {
@@ -88,7 +88,7 @@
     .button:hover {
         border:  1px solid #fff;
         background-color: rgb(199, 50, 50);
-        width: 150px;  
+        transform: scale(1.1, 1.1);  
     }
     
 
@@ -128,7 +128,7 @@
     .button:hover {
         border:  1px solid #fff;
         background-color: rgb(199, 50, 50);
-        width: 130px;  
+        transform: scale(1.1, 1.1); 
     }
     
 

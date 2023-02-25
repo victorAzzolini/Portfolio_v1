@@ -1,0 +1,75 @@
+.projects__main {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.projects__title {
+    margin-bottom: 2rem;
+}
+
+.projects__box-min {
+    background-image: url("../../assets/lepetit-blog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:352px;
+    height: 240px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.projects__box-min:hover {
+    transform: scale(1.3, 1.3);
+    
+}
+
+.projects__box-min__cont {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
+}
+
+.projects__box-min__cont__icons {
+    color: rgb(241, 70, 70);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.027);
+    gap: 1rem;
+    font-size: 1.9rem;
+}
+
+.icon {
+    border: 0.001rem solid white;
+    padding: 0.3rem;
+    border-radius: 10px 5px 10px 5px;
+    background-color: rgba(0, 0, 0, 0.404);
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.box-min__btn {
+    padding: 0.4rem 2px 0.4rem 2px;
+    width: 100px;
+}
