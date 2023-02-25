@@ -14,7 +14,6 @@
 }
 
 .projects__box-min {
-    background-image: url("../../assets/lepetit-blog.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,12 +25,27 @@
     transition: 0.3s;
 }
 
+.blog {
+    background-image: url("../../assets/lepetit-blog.png");
+}
+
+.land-page {
+    background-image: url("../../assets/land-page-android.png");
+}
+
+.page-tribute {
+    background-image: url("../../assets/tribute-page.png");
+}
+
 .projects__box-min:hover {
     transform: scale(1.3, 1.3);
-    
 }
 
 .projects__box-min__cont {
+    display: none;
+}
+
+.projects__box-min__cont:hover {
     width: 100%;
     height: 100%;
     margin: 0;
