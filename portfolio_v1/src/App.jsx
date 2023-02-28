@@ -11,6 +11,11 @@ function App() {
       <Header />
       <Home />
       <Projects />
+      <Projects />
+      <Projects />
+      <Projects />
+      <Projects />
+      <Projects />
     </div>
   )
 }

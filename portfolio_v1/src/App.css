@@ -82,6 +82,22 @@ body {
   padding-bottom: 200px;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent    /* color of the scroll thumb */
+ 
+  /* roundness of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--title-color-hover);
+  border-radius: 2px;
+}
+
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -146,7 +162,7 @@ img {
   background: rgb(241, 70, 70);
   color: var(--title-color);
   padding: 1rem 1rem;
-  border-radius: 2rem;
+  border-radius: 5px;
   font-weight: var(--font-medium);
 }
 

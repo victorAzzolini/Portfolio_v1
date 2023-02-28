@@ -22,7 +22,6 @@
     border-radius: 5px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .blog {
@@ -39,13 +38,23 @@
 
 .projects__box-min:hover {
     transform: scale(1.3, 1.3);
+    transition: 0.3s;
 }
 
-.projects__box-min__cont {
-    display: none;
+.projects__box-min__cont  {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
 }
 
-.projects__box-min__cont:hover {
+.projects__box-min__cont__black{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -58,7 +67,7 @@
     justify-content: space-between;
     padding-top: 4.5rem;
     padding-bottom: 1rem;
-    gap: 2rem;
+    gap: 2rem; 
 }
 
 .projects__box-min__cont__icons {
@@ -68,7 +77,19 @@
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.027);
     gap: 1rem;
-    font-size: 1.9rem;
+    font-size: 1.9rem; 
+}
+
+.projects__box-min__cont__icons__out {
+    color: rgb(241, 70, 70);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.027);
+    gap: 1rem;
+    font-size: 1.9rem; 
+    margin-bottom: 200px;
+    display: none;
 }
 
 .icon {
@@ -76,8 +97,8 @@
     padding: 0.3rem;
     border-radius: 10px 5px 10px 5px;
     background-color: rgba(0, 0, 0, 0.404);
-    transition: 0.3s;
 }
+
 
 .icon:hover {
     transform: scale(1.2, 1.2);
@@ -86,4 +107,8 @@
 .box-min__btn {
     padding: 0.4rem 2px 0.4rem 2px;
     width: 100px;
+}
+
+.box-min__btn__out {
+    display: none;
 }
