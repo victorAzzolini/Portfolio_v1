@@ -100,18 +100,18 @@ function Projects() {
                                 <div className="project__img__social">
                                     <img className="project__img" src={image} alt="" />
                                     <div className="project__social">
-                                        <button className="project__btn button">
-                                            <a href="https://projeto-blog-five.vercel.app/" target="_blank">
+                                        <a className="project__btn" href="https://projeto-blog-five.vercel.app/" target="_blank">
+                                            <button className="project__btn button" >
                                                 <i className="uil uil-window"></i>
                                             Repositório
-                                            </a>
-                                        </button>
-                                        <button className="project__btn button">
-                                            <a href="https://github.com/VICTOR-AZZOLINI-DEV/Projeto-Blog" target="_blank">
+                                            </button>
+                                        </a>
+                                        <a className="project__btn" href="https://github.com/VICTOR-AZZOLINI-DEV/Projeto-Blog" target="_blank">
+                                            <button className="project__btn button" >
                                                 <i className="uil uil-github-alt"></i>
                                             Projeto
-                                            </a>
-                                        </button>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="project__info">
