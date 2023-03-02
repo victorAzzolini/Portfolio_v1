@@ -9,7 +9,7 @@ function Header() {
         <header className="header">
             <nav className="nav container">
                 <a href="index.html" className="logo__container">
-                    <i class="uil uil-brackets-curly"></i>
+                    <i className="uil uil-brackets-curly"></i>
                     <div className="logo__name">Azzolini.dev</div>
                 </a>
                 <div className={toogle ? "nav__menu": "show__menu"}>
@@ -27,13 +27,13 @@ function Header() {
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <a href="#skills" className="nav__link">
                                 <i className="uil uil-file-alt nav__logo"></i>
                                 Skills
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <a href="#contacts" className="nav__link">
                                 <i className="uil uil-message nav__logo"></i>
                                 Contato
                             </a>

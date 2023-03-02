@@ -79,7 +79,7 @@ textarea {
 body {
   background-color: var(--background-main);
   color: var(--text-color);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 body::-webkit-scrollbar {
@@ -88,9 +88,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent    /* color of the scroll thumb */
- 
-  /* roundness of the scroll thumb */
+  background: transparent 
 }
 
 body::-webkit-scrollbar-thumb {

@@ -1,14 +1,20 @@
 import { useState } from "react"
-import image from "../../assets/lepetit-blog.png"
+
+import imageBlog from "../../assets/lepetit-blog.png"
+import imageAndroid from "../../assets/land-page-android.png"
+import imageTribute from "../../assets/tribute-page.png"
 
 import "./projects.css"
-import ProjectSeeMore from "./ProjectSeeMore"
+import "./projectSeeMore.css"
+
 
 function Projects() {
     const [contDiv1, setContDiv1] = useState(false)
     const [contDiv2, setContDiv2] = useState(false)
     const [contDiv3, setContDiv3] = useState(false)
     const [seeMore1, setSeeMore1] = useState(false)
+    const [seeMore2, setSeeMore2] = useState(false)
+    const [seeMore3, setSeeMore3] = useState(false)
 
     return (
         <section id="projects" className="projects__main">
@@ -31,7 +37,7 @@ function Projects() {
                         >
                             <abbr className="icon" title="HTML 5"><i className="uil uil-html5 "></i></abbr>
                             <abbr className="icon" title="CSS3"><i className="uil uil-css3-simple "></i></abbr>
-                            <abbr className="icon" title="JavaScript"><i className="uil uil-java-script"></i></abbr>
+                            <abbr className="icon" title="JavaScript"><i className='bx bxl-javascript'></i></abbr>
                             <abbr className="icon" title="React Js"><i className="uil uil-react "></i></abbr>
                         </div>  
                         <button 
@@ -63,9 +69,13 @@ function Projects() {
                             <abbr className="icon" title="CSS3"><i className="uil uil-css3-simple "></i></abbr>
                             
                         </div>  
-                        <button type="text" className={contDiv2 
+                        <button 
+                            type="text" 
+                            className={contDiv2 
                                 ?"box-min__btn button" 
-                                :"box-min__btn__out"}>
+                                :"box-min__btn__out"}
+                            onClick={() => setSeeMore2(!seeMore2)}
+                        >
                             ver mais...
                         </button>
                     </div>
@@ -86,9 +96,13 @@ function Projects() {
                             <abbr className="icon" title="HTML 5"><i className="uil uil-html5 "></i></abbr>
                             <abbr className="icon" title="CSS3"><i className="uil uil-css3-simple "></i></abbr>
                         </div>  
-                        <button type="text" className={contDiv3 
+                        <button 
+                            type="text" 
+                            className={contDiv3 
                                 ?"box-min__btn button" 
-                                :"box-min__btn__out"}>
+                                :"box-min__btn__out"}
+                            onClick={() => setSeeMore3(!seeMore3)}
+                        >
                             ver mais...
                         </button>
                     </div>
@@ -98,15 +112,17 @@ function Projects() {
                             <div className="project__more">
                             <div className="project__content">
                                 <div className="project__img__social">
-                                    <img className="project__img" src={image} alt="" />
+                                    <img className="project__img" src={imageBlog} alt="" />
                                     <div className="project__social">
-                                        <a className="project__btn" href="https://projeto-blog-five.vercel.app/" target="_blank">
+                                        <a className="project__btn" href="https://github.com/VICTOR-AZZOLINI-DEV/Projeto-Blog" target="_blank">
                                             <button className="project__btn button" >
                                                 <i className="uil uil-window"></i>
                                             Repositório
                                             </button>
                                         </a>
-                                        <a className="project__btn" href="https://github.com/VICTOR-AZZOLINI-DEV/Projeto-Blog" target="_blank">
+                                        <a className="project__btn"
+                                        href="https://projeto-blog-five.vercel.app/"
+                                        target="_blank">
                                             <button className="project__btn button" >
                                                 <i className="uil uil-github-alt"></i>
                                             Projeto
@@ -130,7 +146,83 @@ function Projects() {
                             </div>
                             
                         </div>
-                        )}
+            )}
+            {seeMore2 && (
+                            <div className="project__more">
+                            <div className="project__content">
+                                <div className="project__img__social">
+                                    <img className="project__img" src={imageAndroid} alt="" />
+                                    <div className="project__social">
+                                        <a className="project__btn" href="https://github.com/VICTOR-AZZOLINI-DEV/projeto-android" target="_blank">
+                                            <button className="project__btn button" >
+                                                <i className="uil uil-window"></i>
+                                            Repositório
+                                            </button>
+                                        </a>
+                                        <a className="project__btn" href="https://victor-azzolini-dev.github.io/projeto-android/" target="_blank">
+                                            <button className="project__btn button" >
+                                                <i className="uil uil-github-alt"></i>
+                                            Projeto
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="project__info">
+                                    <h2 className="project__title">Projeto Android</h2>
+                                    <div className="project__text">
+                                        <p>O projeto Android é a criação de uma landing page, que me permitiu praticar a criação de layouts, manipulação de imagens, escolha de fontes, além de aplicar diferentes técnicas de design responsivo. Também pude aprofundar meus conhecimentos em HTML e CSS, e descobrir novas maneiras de otimizar a usabilidade do site.</p>
+                                        <br></br>
+                                        <p>Com esse projeto fiquei animado para continuar explorando e aprendendo mais sobre desenvolvimento front-end. Se você tiver alguma sugestão ou comentário, por favor, não hesite em compartilhar comigo.</p>
+                                        <br></br>
+                                    </div>
+                                </div>
+                                <button onClick={() => setSeeMore2(!seeMore2)} className="project__close">
+                                    <i className="uil uil-times"></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+            )}
+            {seeMore3 && (
+                            <div className="project__more">
+                            <div className="project__content">
+                                <div className="project__img__social">
+                                    <img className="project__img" src={imageTribute} alt="" />
+                                    <div className="project__social">
+                                        <a className="project__btn" href="https://github.com/VICTOR-AZZOLINI-DEV/projeto-tribute" target="_blank">
+                                            <button className="project__btn button" >
+                                                <i className="uil uil-window"></i>
+                                            Repositório
+                                            </button>
+                                        </a>
+                                        <a className="project__btn" href="https://victor-azzolini-dev.github.io/projeto-tribute/" target="_blank">
+                                            <button className="project__btn button" >
+                                                <i className="uil uil-github-alt"></i>
+                                            Projeto
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="project__info">
+                                    <h2 className="project__title">Projeto Tributo</h2>
+                                    <div className="project__text">
+                                        <p>Este projeto se trata de uma landing page usando HTML e CSS para aprimorar minhas habilidades como desenvolvedor front-end.
+                                        </p>
+                                        <br /> 
+                                        <p>
+                                        Mas esta página é muito mais do que apenas uma oportunidade para praticar minhas habilidades - ela também é uma homenagem às programadoras do ENIAC.</p>
+                                        <br></br>
+                                        <p>Minha página apresenta informações sobre as programadoras do ENIAC, seus papéis no desenvolvimento do ENIAC e sua contribuição para a história da computação.</p>
+                                    </div>
+                                </div>
+                                <button onClick={() => setSeeMore3(!seeMore3)} className="project__close">
+                                    <i className="uil uil-times"></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+            )}
+                        
         </section> 
     )
 }

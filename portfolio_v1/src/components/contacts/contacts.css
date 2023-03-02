@@ -1,0 +1,139 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.contacts__title {
+    font-weight: 300;
+    padding-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contacts__form {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.contacts__form__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.contacts__form label {
+    color: #fff;
+    font-weight: var(--font-semi);
+    font-size: var(--normal-font-size);
+}
+
+.contacts__form__msg {
+    display: none;
+}
+
+.contacts__user-info {
+    padding: 0.3rem;
+}
+
+.contacts__text-area {
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+
+.contacts__form__info button {
+    align-self:center;
+}
+
+.contacts__social {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    transition: 0.3s;
+
+}
+
+.contacts__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.contacts__social i {
+    font-size: calc(var(--h2-font-size) + 0.3rem) ;
+    border: 0.03rem solid #fff;
+    color: rgb(241, 70, 70);
+    background-color: rgba(0, 0, 0, 0.027);
+    padding: 1rem;
+    border-radius: 40%;
+}
+
+.contacts__social a:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+.contacts__links-info-title {
+    font-size: var(--h2-font-size);
+}
+
+.contacts__links-info-subtitle {
+    color: rgba(241, 70, 70, 0.671);
+}
+
+/*============ BREAKPOINTS ================*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    .contacts {
+        margin-top: 4rem;
+    }
+    .contacts__title {
+        margin-bottom: 2rem;
+    }
+
+    .contacts__form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contacts__form__msg {
+        display: block;
+    }
+
+    .contacts__social {
+        margin-top: 2rem;
+        padding-bottom: 10rem;
+    }
+
+    .contacts__form button {
+        align-self: center;
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    .contacts__social {
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .container {
+      margin-left: var(--mb-1);
+      margin-right: var(--mb-1);
+    }
+  }

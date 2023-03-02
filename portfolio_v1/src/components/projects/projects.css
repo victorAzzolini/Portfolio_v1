@@ -7,10 +7,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
+    row-gap: 2rem;
 }
 
 .projects__title {
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+    font-weight: 300;
 }
 
 .projects__box-min {
@@ -22,6 +25,7 @@
     border-radius: 5px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
     cursor: pointer;
+    z-index: 100;
 }
 
 .blog {
@@ -37,8 +41,9 @@
 }
 
 .projects__box-min:hover {
-    transform: scale(1.3, 1.3);
+    transform: scale(1.2, 1.2);
     transition: 0.3s;
+    z-index: 1;
 }
 
 .projects__box-min__cont  {
@@ -112,3 +117,30 @@
 .box-min__btn__out {
     display: none;
 }
+
+/*============ BREAKPOINTS ================*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .projects__box-min:hover {
+        transform: scale(1.1, 1.1);
+        transition: 0.3s;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .projects__box-min:hover {
+        transform: scale(1.01, 1.01);
+        transition: 0.3s;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    
+  }
+  

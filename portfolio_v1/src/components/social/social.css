@@ -15,7 +15,7 @@
 
 .social__link:hover {
     color: var(--title-color-hover);
-    font-size: 1.5rem;
+    transform: scale(1.2, 1.2);
 }
 
 /*============ BREAKPOINTS ================*/

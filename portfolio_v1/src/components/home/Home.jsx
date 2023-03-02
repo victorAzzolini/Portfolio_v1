@@ -21,7 +21,7 @@ function Home(){
                 <div className="home__button">
                     <a href="" className="dowload__button">
                         <button className="button">
-                            <i class="uil uil-file-download"></i>
+                            <i className="uil uil-file-download"></i>
                             Download CV
                         </button>
                     </a>
@@ -34,8 +34,6 @@ function Home(){
                 </div>
                 
             </div>
-            
-            
         </section>
     )
 }

@@ -5,6 +5,7 @@
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 100px;
+    margin-top: 4rem;
 }
 
 .home__description {
@@ -52,8 +53,6 @@
     justify-content: space-evenly;
     align-self: normal;
     margin-top: 1.5rem;
-    
-    
 }
 
 .button {
@@ -139,6 +138,7 @@
         margin: 0;
         padding-left: 0;
         padding-top: 2rem;
+        padding-bottom: 3rem;
     }
 
     .home__description {
