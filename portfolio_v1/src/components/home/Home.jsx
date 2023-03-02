@@ -1,6 +1,8 @@
 
 import Social from "../social/Social"
 
+import curricullum from "../../assets/Curriculum_Victor_Azzolini.pdf"
+
 import "./home.css"
 
 function Home(){
@@ -19,13 +21,13 @@ function Home(){
                 <p className="home__about">Amo as possibilidades que a tecnologia pode proporcionar e as realidades que ela pode transformar! </p>
                     
                 <div className="home__button">
-                    <a href="" className="dowload__button">
+                    <a href={curricullum} target="_blank" className="dowload__button">
                         <button className="button">
                             <i className="uil uil-file-download"></i>
                             Download CV
                         </button>
                     </a>
-                    <a href="#contato" className="contato__button">
+                    <a href="#message" className="contato__button">
                         <button className="button">
                             <i className="uil uil-message"></i>
                             Enviar Msg
