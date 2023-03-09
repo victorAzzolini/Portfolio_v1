@@ -34,11 +34,11 @@ function Contacts() {
                 </form>    
             </div>
             <div className="contacts__social">
-                <a className="contacts__links" href="mailto:victorazzolini94@gmail.com"><i class="uil uil-envelope"></i>
+                <a className="contacts__links" href="mailto:victorazzolini94@gmail.com"><i class="uil uil-envelope" target="_blank"></i>
                     <span className="contacts__links-info-title">Email</span>
                     <span className="contacts__links-info-subtitle">victorazzolini94@gmail.com</span>
                 </a>
-                <a className="contacts__links" href="https://api.whatsapp.com/send?phone=5519984106095">
+                <a className="contacts__links" href="https://api.whatsapp.com/send?phone=5519984106095" target="_blank">
                     <i class="uil uil-whatsapp"></i>
                     <span className="contacts__links-info-title">Telefone</span>
                     <span className="contacts__links-info-subtitle">+55 19 98410-6095</span>
