@@ -1,7 +1,7 @@
 
 import Social from "../social/Social"
 
-import curricullum from "../../assets/Curriculum_Victor_Azzolini.pdf"
+import curricullum from "../../assets/Currículo_Victor_Azzolini.pdf"
 
 import "./home.css"
 
